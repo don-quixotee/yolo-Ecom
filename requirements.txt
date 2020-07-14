@@ -10,6 +10,7 @@ chardet==3.0.4
 Django==2.2.12
 django-braces==1.14.0
 django-celery==3.3.1
+django-crispy-forms==1.9.2
 django-extensions==3.0.2
 django-froala-editor==3.1.0
 django-model-utils==4.0.0
