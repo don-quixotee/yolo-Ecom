@@ -4,9 +4,10 @@ from django.utils import timezone
 from django.views.decorators.http import require_POST
 from .models import Coupon
 from .forms import CouponApplyForm
+from django.contrib.auth.decorators import login_required
 
 
-
+@login_required
 @require_POST
 def coupon_apply(request):
     now = timezone.now()

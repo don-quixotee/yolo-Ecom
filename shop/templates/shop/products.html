@@ -13,7 +13,17 @@
                 <div class="col-12 py-3">
                     <div class="row">
                         <div class="col-12 text-center text-uppercase">
-                            <h2>Computers</h2>
+                            {% if query %}
+                            <h3>searched for <strong>{{query}}</strong></h3>
+                        
+                            
+
+                            {% elif cat %}
+                            <h3>{{cat.name}}</h3>
+                            {% else %}
+                            <h3> All products</h3>
+                            {% endif %}
+
                         </div>
                     </div>
                     <div class="row">
@@ -45,8 +55,10 @@
                                         </span>
                                     </div>
                                     <div class="col-12 mb-3 align-self-end">
-                                        <button class="btn btn-outline-dark" type="button"><i
-                                                class="fas fa-cart-plus mr-2"></i>Add to cart</button>
+
+                                        <a href="{% url 'add-wishlist' product.pk %}"><button class="btn btn-outline-dark" type="button"><i
+                                            class="fas fa-cart-plus mr-2"></i>Add to wishlist</button></a>
+                                        
                                                 
                                     </div>
                                 </div>
