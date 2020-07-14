@@ -82,7 +82,11 @@
         color: #FFB656;
     }
 
-    @media (max-width: 600px) {}
+    @media (max-width: 600px) {
+        .product-item-desc{
+            display: none;
+        }
+    }
 </style>
 
 {% endblock %}
@@ -174,7 +178,7 @@
             <div class="row">
 
                 <!-- Details -->
-                <div class="col-md-7">
+                <div class="col-md-7 product-item-desc">
                     <div class="col-12">
                         <div class="row">
                             <div class="col-12 text-uppercase">

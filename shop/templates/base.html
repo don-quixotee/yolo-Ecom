@@ -140,9 +140,8 @@
                                         <a style="color: black;" class="nav-link dropdown-toggle" href="#" id="fashion" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Account</strong><span class="sr-only">(current)</span></a>
                                         <div class="dropdown-menu" aria-labelledby="fashion">
                                             <a class="dropdown-item" href="{% url 'account' %}">Profile</a>
-                                            <a class="dropdown-item" href="category.html">orders</a>
                                             <a class="dropdown-item" href="{% url 'wishlist' %}">wishlist</a>
-                                            <a class="dropdown-item" href="category.html">Support  </a>
+                                            <a class="dropdown-item" href="">Support  </a>
                                             <a class="dropdown-item" href="{% url 'logout' %}">Log-out</a>
                                         </div>
                                     </li>
@@ -151,11 +150,11 @@
                                    {% else %}
 
                                    <li class="nav-item">
-                                    <a style="color: black;" class="nav-link" href=""><strong>Login</strong></a>
+                                    <a style="color: black;" class="nav-link" href="{% url 'login' %}"><strong>Login</strong></a>
                                     
                                 </li>
                                 <li class="nav-item">
-                                    <a style="color: black;" class="nav-link" href=""><strong>signUp</strong></a>
+                                    <a style="color: black;" class="nav-link" href="{% url 'signUp' %}"><strong>signUp</strong></a>
                                     
                                 </li>
                                 {% endif %}
