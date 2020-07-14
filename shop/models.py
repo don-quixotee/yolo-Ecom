@@ -3,7 +3,6 @@ from django.utils.text import slugify
 from django.urls import reverse
 from froala_editor.fields import FroalaField
 from django.contrib.auth import get_user_model
-from django.contrib.contenttypes.fields import GenericRelation
 
  
 
